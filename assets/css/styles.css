@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Righteous&display=swap');
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background: #17181c;
+    align-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: white;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+:checked+label {
+    text-decoration: line-through;
+    color: grey;
+
+}
+
+label {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]::before {
+    content: " ";
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: #17181c;
+    ;
+    border: 1px solid white;
+}
+
+input[type="checkbox"]:checked::after {
+    content: " ";
+    width: 0.2rem;
+    height: 0.5rem;
+    margin-left: 0.3rem;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+button {
+    color: var(--color);
+    transition: 0.25s;
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+button:hover,
+button:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+.raise {
+    --color: white;
+    --hover: white;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}

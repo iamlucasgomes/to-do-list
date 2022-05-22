@@ -102,6 +102,36 @@ button:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
 }
-.link{
+
+.link {
     text-decoration: none;
+    color: white;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    line-height: 5px;
+    bottom: 1%;
+    left: auto;
+    text-align: center;
+    width: auto;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: absolute;
+
+}
+
+.link-footer {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    --color: white;
+    --hover: white;
+
+}
+
+.link-footer:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
 }

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Righteous&display=swap');
-
+html,body{
+    height: 100%;
+    overflow: hidden
+}
 
 body {
     display: flex;
@@ -113,8 +116,7 @@ button:focus {
     text-align: center;
     font-size: 10px;
     line-height: 5px;
-    bottom: 1%;
-    left: auto;
+    bottom: 0;
     text-align: center;
     width: auto;
     font-family: 'Plus Jakarta Sans', sans-serif;

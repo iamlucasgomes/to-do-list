@@ -4,16 +4,9 @@ const taskList = document.getElementById('tasks');
 form.onsubmit = function (e) {
 	e.preventDefault();
 	const inputField = document.getElementById('task-input');
-	if(document.getElementById("task-input").value == ""){
-		alert('Opa, você precisa digitar algo!');
-		document.getElementById("task-input").focus();
-		} else {
-			addTask(inputField.value);
-			form.reset();
-		}
+	addTask(inputField.value);
+	form.reset();
 };
-
-
 
 function addTask(description) {
 	const taskContainer = document.createElement('div');
@@ -34,3 +27,17 @@ function addTask(description) {
 
 	taskList.appendChild(taskContainer);
 }
+
+date = new Date();
+year = date.getFullYear();
+document.getElementById("assinatura").innerHTML = "L U C A S &ensp; G O M E S &ensp;© &ensp;" + year;
+
+document.querySelector('form input').oninvalid = function() {  
+	// remove mensagens de erro padrão
+	this.setCustomValidity("");
+	// faz a validação novamente
+	if (!this.validity.valid) {
+		// se estiver inválido, coloca a mensagem
+		this.setCustomValidity("Opa, você precisa digitar algo!");
+	 }
+ };

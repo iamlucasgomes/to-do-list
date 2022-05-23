@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Righteous&display=swap');
-html,body{
-    height: 100%;
-    overflow: hidden
-}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Righteous&Open+Sans:wght@300;600&display=swap');
+
 
 body {
     display: flex;
@@ -28,7 +25,6 @@ input[type="text"] {
     border-radius: 5px;
     border: 1px solid black;
 }
-
 #tasks {
     display: flex;
     flex-direction: column;
@@ -51,6 +47,7 @@ input[type="text"] {
 label {
     margin-left: 5px;
     margin-top: 5px;
+    margin-bottom: 2px;
 }
 
 input[type="checkbox"]::before {
@@ -112,6 +109,8 @@ button:focus {
 }
 
 .footer {
+    margin-top: auto;
+    margin-bottom: 10px;
     color: white;
     text-align: center;
     font-size: 10px;
@@ -120,7 +119,8 @@ button:focus {
     text-align: center;
     width: auto;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    position: absolute;
+    position: initial;
+    font-weight: 900;
 
 }
 
@@ -137,3 +137,25 @@ button:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
 }
+label{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    width: 400px;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-align: left;
+}
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 437px;
+    border:1px solid white;
+  }

@@ -10,22 +10,27 @@
 </head>
 
 <body>
-    <a class="link" href="index.html"><h1>To-do list</h1></a>
+    <a class="link" href="index.html">
+        <h1>To-do list</h1>
+    </a>
     <div id="list">
         <form id="task-form">
-            <input id="task-input" name="tarefa" type="text" placeholder="Digite aqui sua tarefa" />
+            <input id="task-input" name="tarefa" type="text" maxlength="86" required placeholder="Digite aqui sua tarefa"/>
             <p><button class="raise" type="submit">adicionar</button>
             </p>
         </form>
         <div id="tasks"></div>
     </div>
     </div>
-    <footer class="footer link">    <p> L U C A S &ensp; G O M E S © 2022 </p>
+    <footer class="footer link">
+        <p id="assinatura"> </p>
         <p>Desenvolvedor Web Fullstack </p>
-        <p><a class="link-footer" href="https://www.linkedin.com/in/iamlucasgomes/" target="_blank">LinkedIn</a>&ensp;- &ensp;<a class="link-footer"
-                href=mailto:lucas.devjs@gmail.com>Gmail</a>&ensp;- &ensp;<a class="link-footer" href="tel:(61) 98679 - 7096">(61)
+        <p><a class="link-footer" href="https://www.linkedin.com/in/iamlucasgomes/" target="_blank">LinkedIn</a>&ensp;-
+            &ensp;<a class="link-footer" href=mailto:lucas.devjs@gmail.com>Gmail</a>&ensp;- &ensp;<a class="link-footer"
+                href="tel:(61) 98679 - 7096">(61)
                 98679
-                - 7096</a></p></footer>
+                - 7096</a></p>
+    </footer>
     <script src="assets/js/scripts.js"></script>
 </body>
 

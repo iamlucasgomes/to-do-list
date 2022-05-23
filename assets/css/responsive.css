@@ -1,20 +1,24 @@
 /* Telefones em paisagem e abaixo */
-@media (max-width: 480px) { 
-    label{
+@media (max-width: 480px) {
+    label {
         width: 250px;
         word-wrap: break-word;
         padding-right: 10px;
         padding-left: 5px;
         text-align: left;
-        
+
     }
+
     .task-item {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
         max-width: 300px;
-        border:1px solid white;
-      }
+    }
+
+    .footer {
+        margin-bottom: 50px;
+    }
 }
 
 /* Telefones em paisagem a tablet em retrato */
@@ -29,5 +33,5 @@
 
 /* Desktop grande */
 @media (min-width: 1200px) {
-   /* estilos aqui */
+    /* estilos aqui */
 }
